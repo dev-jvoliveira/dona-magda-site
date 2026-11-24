@@ -25,17 +25,18 @@
 
     .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
     bottom: 25px;
     right: 25px;
-    background-color: #25D366;
+    width: auto;
+    height: 60px;
+    padding: 0 12px;
+    background-color: rgba(37, 211, 102, 0.75);
     color: white;
-    border-radius: 50%;
+    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    gap: 10px;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     z-index: 9999;
@@ -43,7 +44,14 @@
     }
 
     .whatsapp-float:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    }
+
+    .whatsapp-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
     }
 
     .whatsapp-float img {
@@ -51,6 +59,97 @@
     height: 45px;
     object-fit: contain;
     }
+
+  
+    /* LOCALIZAÇÃO - DONA MAGDA */
+
+.localizacao {
+    padding: 70px 20px;
+    text-align: center;
+    background: #F8EEE6;
+}
+
+.localizacao h2 {
+    color: #704333;
+    font-size: 32px;
+    margin: 10px 0 15px;
+}
+
+.localizacao .subtitulo {
+    color: #A66A55;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.localizacao .descricao {
+    color: #795E50;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 0 auto 30px;
+}
+
+.endereco-card {
+    background: #FFFFFF;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 25px 25px 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.endereco-card h3 {
+    color: #704333;
+    margin: 0 0 12px;
+}
+
+.endereco-card p {
+    color: #795E50;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.mapa-container {
+    width: calc(100% + 50px);
+    margin: 25px -25px 0;
+    overflow: hidden;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    display: block;
+}
+
+.botao-rota {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #8B5947;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao-rota:hover {
+    background: #704333;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .localizacao h2 {
+        font-size: 26px;
+    }
+
+    .mapa-container iframe {
+        height: 300px;
+    }
+}
 
 
 
@@ -64,17 +163,70 @@
     <a class="btn" href="https://wa.me/5519974273576?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dona%20Magda%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">Faça seu pedido ↗</a>
   </header>
   <main>
-    <section class="hero" id="inicio"><div class="wrap hero-grid"><div class="hero-copy"><div class="eyebrow">Feito com carinho para você</div><h1>Um sabor especial em <em>cada momento.</em></h1><p>Frangos assados, acompanhamentos e doces preparados com cuidado para deixar seu dia mais gostoso. Conheça a Dona Magda!</p><div class="hero-actions"><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Peça pelo Instagram ↗</a><a class="btn dark" href="#produtos">Conheça nossos produtos</a></div></div><div class="hero-logo"><img src="assets/imagens/logo-dona-magda.png" alt="Dona Magda Doces e Assados — personagem da marca com doces e frango assado"></div></div></section>
+    <section class="hero" id="inicio"><div class="wrap hero-grid"><div class="hero-copy"><div class="eyebrow">Feito com carinho para você</div><h1>Um sabor especial em <em>cada momento.</em></h1><p>Frangos assados, acompanhamentos e doces preparados com cuidado para deixar seu dia mais gostoso. Conheça a Dona Magda!</p><div class="hero-actions"><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Peça pelo Instagram ↗</a><a class="btn dark" href="#produtos">Conheça nossos produtos</a></div></div><div class="hero-logo"><img src="assets/imagens/logo-sem-fundo.png" alt="Dona Magda Doces e Assados — personagem da marca com doces e frango assado"></div></div></section>
     <div class="trust"><div class="wrap trust-row"><span><b>♡</b> Feito com carinho</span><span><b>✦</b> Sabor caseiro</span><span><b>⌖</b> Piracicaba – SP</span></div></div>
     <section id="produtos"><div class="wrap"><div class="section-head"><div class="eyebrow">Tem coisa gostosa por aqui</div><h2>O que você encontra na Dona Magda</h2><p>Opções para compartilhar com a família, receber os amigos ou adoçar o seu dia.</p></div><div class="cards">
       <article class="card"><div class="emoji">🍗</div><h3>Frangos assados</h3><p>Frango assado douradinho, preparado para deixar a refeição ainda mais especial.</p></article>
       <article class="card"><div class="emoji">🥗</div><h3>Acompanhamentos</h3><p>Combine seu assado com farofa, maionese e outros acompanhamentos deliciosos.</p></article>
       <article class="card"><div class="emoji">🍬</div><h3>Doces e delícias</h3><p>Doces preparados com carinho para adoçar seus momentos e comemorações.</p></article>
     </div></div></section>
-    <div class="highlight"><div class="wrap highlight-grid"><div><h2>Seu próximo momento gostoso começa aqui.</h2><p>Fale com a Dona Magda pelo Instagram e consulte as opções disponíveis.</p></div><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Chamar no Instagram ↗</a></div></div>
+    <div class="highlight"><div class="wrap highlight-grid"><div><h2>Seu próximo momento gostoso começa aqui.</h2><p>Fale com a Dona Magda pelo Instagram e consulte as opções disponíveis.</p></div><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Conheça nosso Instagram ↗</a></div></div>
     <section id="sobre" class="about"><div class="wrap about-grid"><div class="about-art"><img src="assets/imagens/logo-sem-fundo.png" alt="Personagem e logo da Dona Magda"></div><div><div class="eyebrow">Um pouquinho sobre nós</div><h2>Feito com carinho, servido com amor.</h2><p>A Dona Magda Doces e Assados nasceu para levar sabor e carinho à mesa. Trabalhamos com opções doces e salgadas, valorizando o cuidado em cada preparo e a alegria de compartilhar uma boa refeição.</p><p class="promise">Dona Magda Doces e Assados — qualidade e sabor em cada detalhe. ♡</p></div></div></section>
     <section class="contact" id="contato"><div class="wrap"><div class="contact-box"><div class="eyebrow">Estamos esperando por você</div><h2>Vamos pedir uma delícia?</h2><p>Acompanhe as novidades, veja os produtos e entre em contato pelo Instagram. Será um prazer atender você!</p><div class="social"><a href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">📷 Instagram @donamagda.doceseassados</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">f Facebook</a></div></div></div></section>
   </main>
+  <!-- LOCALIZAÇÃO DA LOJA -->
+
+  
+<!-- LOCALIZAÇÃO DA DONA MAGDA -->
+
+<section class="localizacao" id="localizacao">
+
+    <div class="endereco-card">
+
+        <p class="subtitulo">
+            VAI SER UM PRAZER RECEBER VOCÊ!
+        </p>
+
+        <h2>Venha conhecer a Dona Magda!</h2>
+
+        <p class="descricao">
+            Preparamos tudo com muito carinho.
+            Venha nos visitar e conhecer de perto nossos sabores!
+        </p>
+
+        <h3>📍 Onde estamos</h3>
+
+        <p><strong>Rua Mário Telles, 17</strong></p>
+
+        <p>Nova América, Piracicaba – SP</p>
+
+        <p>CEP 13417-724</p>
+
+        <div class="mapa-container">
+
+            <iframe
+                src="https://maps.google.com/maps?q=Rua%20M%C3%A1rio%20Telles%2C%2017%2C%20Nova%20Am%C3%A9rica%2C%20Piracicaba%20-%20SP%2C%2013417-724&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+    <a
+        href="https://www.google.com/maps/dir/?api=1&destination=Rua%20M%C3%A1rio%20Telles%2C%2017%2C%20Nova%20Am%C3%A9rica%2C%20Piracicaba%20-%20SP%2C%2013417-724"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="botao-rota">
+
+        Como chegar até nós
+
+    </a>
+
+</section>
+
   <footer><div class="wrap"><strong>Dona Magda Doces e Assados</strong><p>Piracicaba – SP</p><p>Sabores especiais preparados com carinho! ♡</p></div></footer>
   <script>document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}}));</script>
   <a
@@ -82,9 +234,10 @@
     class="whatsapp-float"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Fale conosco pelo WhatsApp"
-    >
-     <img src="assets/imagens/logo-whatsapp.png"alt="WhatsApp">
-    </a>
+    aria-label="Faça seu pedido pelo WhatsApp"
+>
+    <span class="whatsapp-text">Faça seu pedido!</span>
+    <img src="assets/imagens/logo-whatsapp.png" alt="WhatsApp">
+</a>
 </body>
 </html>
