@@ -6,170 +6,28 @@
   <meta name="theme-color" content="#3b160d">
   <meta name="description" content="Dona Magda Doces e Assados — frangos assados, acompanhamentos e doces preparados com carinho em Piracicaba-SP.">
   <title>Dona Magda Doces e Assados | Piracicaba</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/imagens/logo-sem-fundo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--brown:#35150d;--brown2:#572619;--pink:#f52e79;--pink2:#ff75a6;--cream:#fff8ec;--muted:#76645b;--white:#fff;--shadow:0 18px 50px #35150d18}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--brown);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-    .top{background:var(--brown);color:#fff2e5;font-size:13px;padding:10px 0;text-align:center;letter-spacing:.03em}.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:800}.brand img{width:66px;height:66px;object-fit:contain;border-radius:50%;background:#fff}.brand span{font-family:'Playfair Display',serif;font-size:19px;line-height:1.1}.brand small{display:block;color:var(--pink);font:700 11px 'DM Sans';letter-spacing:.1em;text-transform:uppercase;margin-top:4px}.navlinks{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--pink)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--pink);color:#fff;padding:14px 21px;border-radius:999px;font-weight:800;box-shadow:0 9px 22px #f52e7933;transition:.2s}.btn:hover{transform:translateY(-2px);background:#df1c66}.btn.dark{background:var(--brown)}
-    .hero{position:relative;overflow:hidden;background:linear-gradient(110deg,#fff8ec 0%,#fff0e2 52%,#fbd4d5 100%);padding:58px 0 64px}.hero:after{content:'♡';position:absolute;right:4%;top:4%;font-size:180px;color:#f52e7912;transform:rotate(14deg)}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:34px;position:relative;z-index:1}.eyebrow{color:var(--pink);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px}.hero h1{font:800 clamp(38px,5vw,64px)/1.04 'Playfair Display',serif;margin:14px 0 18px;letter-spacing:-.03em}.hero h1 em{font-style:normal;color:var(--pink)}.hero p{font-size:17px;line-height:1.7;color:#72574b;max-width:510px;margin:0 0 27px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-logo{display:flex;justify-content:center;align-items:center}.hero-logo img{width:min(100%,460px);filter:drop-shadow(0 22px 30px #35150d20);border-radius:28px}
-    .trust{background:#fff;padding:18px 0;border-top:1px solid #f4e5d8;border-bottom:1px solid #f4e5d8}.trust-row{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;color:#76594b;font-size:14px;font-weight:700}.trust b{color:var(--pink);margin-right:7px}
-    section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head .eyebrow{margin-bottom:10px}.section-head h2{font:800 clamp(30px,4vw,43px)/1.1 'Playfair Display',serif;margin:0 0 12px}.section-head p{color:var(--muted);line-height:1.7;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #f1e3d8;border-radius:22px;padding:27px;box-shadow:var(--shadow);min-height:220px;position:relative;overflow:hidden}.card:after{content:'';position:absolute;width:110px;height:110px;border-radius:50%;background:#ffedf3;right:-35px;top:-35px}.card .emoji{font-size:38px;position:relative;z-index:1}.card h3{font:700 22px 'Playfair Display',serif;margin:17px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.65;margin:0}.highlight{background:var(--brown);color:#fff;padding:58px 0}.highlight-grid{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px}.highlight h2{font:700 clamp(28px,4vw,40px) 'Playfair Display';margin:0 0 10px}.highlight p{color:#f4d9cb;margin:0;line-height:1.7}.highlight .btn{white-space:nowrap;background:var(--pink)}
-    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}.about-art{background:#ffe7ed;border-radius:28px;padding:22px;text-align:center}.about-art img{width:min(100%,330px);border-radius:20px}.about h2{font:800 38px 'Playfair Display';margin:10px 0 16px}.about p{color:var(--muted);line-height:1.8}.about .promise{font-weight:800;color:var(--pink);margin-top:20px}
-    .contact{background:#fff1e9}.contact-box{max-width:760px;margin:auto;text-align:center;background:#fff;border-radius:28px;padding:42px 28px;box-shadow:var(--shadow)}.contact-box h2{font:800 38px 'Playfair Display';margin:0 0 12px}.contact-box p{color:var(--muted);line-height:1.7;margin:0 auto 24px;max-width:540px}.social{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.social a{border:1px solid #f1d9d0;border-radius:999px;padding:12px 18px;font-weight:800;font-size:14px}.social a:hover{border-color:var(--pink);color:var(--pink)}footer{background:var(--brown);color:#f9e9df;padding:28px 0;text-align:center;font-size:13px}footer strong{color:#ff7da9}footer p{margin:6px 0;color:#d9bdb0}
-    @media(max-width:800px){.navlinks{display:none}.hero{padding:38px 0 48px}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.hero-logo img{width:min(78%,360px)}.cards{grid-template-columns:1fr}.highlight-grid{grid-template-columns:1fr;text-align:center}.highlight .btn{justify-self:center}.trust-row{gap:15px 25px}.about-art{max-width:420px;margin:auto}.about{text-align:center}section{padding:58px 0}}
-    @media(max-width:420px){.wrap{width:min(100% - 28px,1120px)}.brand img{width:54px;height:54px}.brand span{font-size:16px}.hero h1{font-size:39px}.btn{width:100%}.contact-box{padding:32px 18px}}
-
-
-    .whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: auto;
-    height: 60px;
-    padding: 0 12px;
-    background-color: rgba(37, 211, 102, 0.75);
-    color: white;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    z-index: 9999;
-    transition: transform 0.2s ease;
-    }
-
-    .whatsapp-float:hover {
-    transform: scale(1.05);
-    }
-
-    .whatsapp-text {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    white-space: nowrap;
-    }
-
-    .whatsapp-float img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    }
-
   
-    /* LOCALIZAÇÃO - DONA MAGDA */
-
-.localizacao {
-    padding: 70px 20px;
-    text-align: center;
-    background: #F8EEE6;
-}
-
-.localizacao h2 {
-    color: #704333;
-    font-size: 32px;
-    margin: 10px 0 15px;
-}
-
-.localizacao .subtitulo {
-    color: #A66A55;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.localizacao .descricao {
-    color: #795E50;
-    font-size: 16px;
-    line-height: 1.7;
-    max-width: 550px;
-    margin: 0 auto 30px;
-}
-
-.endereco-card {
-    background: #FFFFFF;
-    max-width: 1000px;
-    margin: 0 auto 30px;
-    padding: 25px 25px 0;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-}
-
-.endereco-card h3 {
-    color: #704333;
-    margin: 0 0 12px;
-}
-
-.endereco-card p {
-    color: #795E50;
-    line-height: 1.6;
-    margin: 5px 0;
-}
-
-.mapa-container {
-    width: calc(100% + 50px);
-    margin: 25px -25px 0;
-    overflow: hidden;
-}
-
-.mapa-container iframe {
-    width: 100%;
-    height: 400px;
-    border: 0;
-    display: block;
-}
-
-.botao-rota {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 30px;
-    background: #8B5947;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.botao-rota:hover {
-    background: #704333;
-    transform: scale(1.05);
-}
-
-@media (max-width: 600px) {
-    .localizacao h2 {
-        font-size: 26px;
-    }
-
-    .mapa-container iframe {
-        height: 300px;
-    }
-}
 
 
 
-
-  </style>
-
-
-
-<!-- PRÉVIA DE COMPARTILHAMENTO -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://donamagda.com.br/">
-<meta property="og:title" content="Dona Magda Doces e Assados">
-<meta property="og:description" content="Doces, salgados e frango assado preparados com muito carinho! Conheça a Dona Magda e venha experimentar nossos sabores.">
-<meta property="og:image" content="https://donamagda.com.br/assets/imagens/logo-sem-fundo.png">
-<meta property="og:image:alt" content="Logo da Dona Magda Doces e Assados">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dona Magda Doces e Assados">
-<meta name="twitter:description" content="Doces, salgados e frango assado preparados com muito carinho!">
-<meta name="twitter:image" content="https://donamagda.com.br/assets/imagens/logo-sem-fundo.png">
+  <!-- PRÉVIA DE COMPARTILHAMENTO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dona Magda Doces e Assados">
+  <meta property="og:description" content="Doces, salgados e frango assado preparados com muito carinho! Conheça a Dona Magda e venha experimentar nossos sabores.">
+  <meta property="og:image" content="https://donamagda.com.br/assets/imagens/logo-sem-fundo.png">
+  <meta property="og:image:alt" content="Logo da Dona Magda Doces e Assados">
+  <meta property="og:url" content="https://donamagda.com.br/">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dona Magda Doces e Assados">
+  <meta name="twitter:description" content="Doces, salgados e frango assado preparados com muito carinho!">
+  <meta name="twitter:image" content="https://donamagda.com.br/assets/imagens/logo-sem-fundo.png">
+  
 
 
 
@@ -179,21 +37,214 @@
 </head>
 <body>
   <header class="wrap nav">
-    <a class="brand" href="#inicio" aria-label="Dona Magda Doces e Assados - início"><img src="assets/imagens/logo-sem-fundo.png" alt="Logo Dona Magda"><span>Dona Magda<small>Doces e Assados</small></span></a>
-    <nav class="navlinks"><a href="#produtos">Nossos produtos</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a></nav>
+    <a class="brand" href="#inicio" aria-label="Dona Magda Doces e Assados - início">
+        <img src="assets/imagens/logo-sem-fundo.png" alt="Logo Dona Magda">
+        <span>Dona Magda<small>Doces e Assados</small></span>
+    </a>
+    <nav class="navlinks">
+        <a href="#produtos">Nossos produtos</a>
+        <a href="#sobre">Sobre nós</a><a href="#contato">Contato</a>
+    </nav>
     <a class="btn" href="https://wa.me/5519974273576?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dona%20Magda%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">Faça seu pedido ↗</a>
   </header>
   <main>
-    <section class="hero" id="inicio"><div class="wrap hero-grid"><div class="hero-copy"><div class="eyebrow">Feito com carinho para você</div><h1>Um sabor especial em <em>cada momento.</em></h1><p>Frangos assados, acompanhamentos e doces preparados com cuidado para deixar seu dia mais gostoso. Conheça a Dona Magda!</p><div class="hero-actions"><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Peça pelo Instagram ↗</a><a class="btn dark" href="#produtos">Conheça nossos produtos</a></div></div><div class="hero-logo"><img src="assets/imagens/logo-sem-fundo.png" alt="Dona Magda Doces e Assados — personagem da marca com doces e frango assado"></div></div></section>
-    <div class="trust"><div class="wrap trust-row"><span><b>♡</b> Feito com carinho</span><span><b>✦</b> Sabor caseiro</span><span><b>⌖</b> Piracicaba – SP</span></div></div>
-    <section id="produtos"><div class="wrap"><div class="section-head"><div class="eyebrow">Tem coisa gostosa por aqui</div><h2>O que você encontra na Dona Magda</h2><p>Opções para compartilhar com a família, receber os amigos ou adoçar o seu dia.</p></div><div class="cards">
-      <article class="card"><div class="emoji">🍗</div><h3>Frangos assados</h3><p>Frango assado douradinho, preparado para deixar a refeição ainda mais especial.</p></article>
-      <article class="card"><div class="emoji">🥗</div><h3>Acompanhamentos</h3><p>Combine seu assado com farofa, maionese e outros acompanhamentos deliciosos.</p></article>
-      <article class="card"><div class="emoji">🍬</div><h3>Doces e delícias</h3><p>Doces preparados com carinho para adoçar seus momentos e comemorações.</p></article>
-    </div></div></section>
+    <section class="hero" id="inicio"><div class="wrap hero-grid"><div class="hero-copy">
+        <div class="eyebrow">Feito com carinho para você</div>
+        <h1>Um sabor especial em <em>cada momento.</em></h1>
+        <p>Frangos assados, acompanhamentos e doces preparados com cuidado para deixar seu dia mais gostoso. Conheça a Dona Magda!</p>
+        <div class="hero-actions"><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Peça pelo Instagram ↗</a>
+            <a class="btn dark" href="#produtos">Conheça nossos produtos</a>
+        </div></div>
+        <div class="hero-logo"><img src="assets/imagens/logo-sem-fundo.png" alt="Dona Magda Doces e Assados — personagem da marca com doces e frango assado"></div>
+    </div>
+    </section>
+    <div class="trust">
+        <div class="wrap trust-row">
+        <span><b>♡</b> Feito com carinho</span>
+        <span><b>✦</b> Sabor caseiro</span><span><b>⌖</b> Piracicaba – SP</span>
+        </div>
+    </div>
+    
+    <section class="cardapio" id="cardapio">
+
+    <div class="cardapio-wrap">
+
+        <div class="cardapio-titulo">
+            <div class="eyebrow">Preparados com muito carinho</div>
+            <h2>Nosso Cardápio</h2>
+            <p>
+                Escolha a combinação perfeita para deixar sua refeição ainda mais especial!
+            </p>
+            <div class="titulo-detalhe"></div>
+        </div>
+
+        <h3 class="categoria-titulo">Combos da Dona Magda</h3>
+
+        
+<div class="carrossel-container">
+
+    <button class="carrossel-seta seta-anterior"
+        onclick="moverCarrossel(-1)"
+        aria-label="Produtos anteriores">
+        &#10094;
+    </button>
+
+    <div class="carrossel-janela">
+        <div class="carrossel-trilho" id="carrosselProdutos">
+
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/imagens/combo-1.jpg" alt="Frango assado com batata">
+                </div>
+                <span class="produto-tag">Combo 1</span>
+                <h3>Frango com Batata</h3>
+                <p>Frango assado acompanhado de aproximadamente 250g de batata.</p>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/imagens/combo-2.jpg" alt="Frango com batata e maionese">
+                </div>
+                <span class="produto-tag">Combo 2</span>
+                <h3>Frango, Batata e Maionese</h3>
+                <p>Frango assado, aproximadamente 250g de batata e 500g de maionese.</p>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/imagens/combo-3.jpg" alt="Combo completo">
+                </div>
+                <span class="produto-tag">Combo 3</span>
+                <h3>Combo Completo</h3>
+                <p>Frango assado, aproximadamente 250g de batata, 500g de maionese e 250g de farofa.</p>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/imagens/combo-4.jpg" alt="Frango com batata e farofa">
+                </div>
+                <span class="produto-tag">Combo 4</span>
+                <h3>Frango com Batata e Farofa</h3>
+                <p>Frango assado, aproximadamente 250g de batata e 250g de farofa.</p>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem">
+                    <img src="assets/imagens/combo-5.jpg" alt="Frango com maionese e farofa">
+                </div>
+                <span class="produto-tag">Combo 5</span>
+                <h3>Frango com Maionese e Farofa</h3>
+                <p>Frango assado acompanhado de 500g de maionese e 250g de farofa.</p>
+            </div>
+
+            <div class="produto-card produto-destaque">
+                <div class="produto-imagem">
+                    <img src="assets/imagens/frango-assado.jpg" alt="Frango assado da Dona Magda">
+                </div>
+                <span class="produto-tag">Especial da casa</span>
+                <h3>Frango Assado</h3>
+                <p>Nosso frango assado, preparado com muito carinho para sua refeição.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="carrossel-seta seta-proxima"
+        onclick="moverCarrossel(1)"
+        aria-label="Próximos produtos">
+        &#10095;
+    </button>
+
+</div>
+
+<div class="carrossel-indicadores" id="indicadoresCarrossel"></div>
+
+
+        <h3 class="categoria-titulo adicionais-titulo">Adicionais</h3>
+
+        
+<div class="carrossel-container adicionais-carrossel">
+
+    <button class="carrossel-seta"
+        onclick="moverAdicionais(-1)"
+        aria-label="Adicionais anteriores">
+        &#10094;
+    </button>
+
+    <div class="carrossel-janela">
+        <div class="carrossel-trilho" id="carrosselAdicionais">
+
+            <div class="adicional-card">
+                <div class="adicional-imagem">
+                    <img src="assets/imagens/batata.jpg" alt="Batata">
+                </div>
+                <h3>Batata</h3>
+                <p>Aproximadamente 250g</p>
+            </div>
+
+            <div class="adicional-card">
+                <div class="adicional-imagem">
+                    <img src="assets/imagens/maionese.jpg" alt="Maionese">
+                </div>
+                <h3>Maionese</h3>
+                <p>500g</p>
+            </div>
+
+            <div class="adicional-card">
+                <div class="adicional-imagem">
+                    <img src="assets/imagens/farofa.jpg" alt="Farofa">
+                </div>
+                <h3>Farofa</h3>
+                <p>250g</p>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="carrossel-seta"
+        onclick="moverAdicionais(1)"
+        aria-label="Próximos adicionais">
+        &#10095;
+    </button>
+
+</div>
+
+<div class="carrossel-indicadores" id="indicadoresAdicionais"></div>
+
+
+        <div class="aviso-cardapio">
+            <h3>Informações importantes</h3>
+
+            <p>
+                Os itens que acompanham cada combo são fixos.
+                Não realizamos trocas entre os itens.
+            </p>
+
+            <p>
+                Os adicionais são vendidos separadamente
+                e cobrados à parte.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
     <div class="highlight"><div class="wrap highlight-grid"><div><h2>Seu próximo momento gostoso começa aqui.</h2><p>Fale com a Dona Magda pelo Instagram e consulte as opções disponíveis.</p></div><a class="btn" href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">Conheça nosso Instagram ↗</a></div></div>
-    <section id="sobre" class="about"><div class="wrap about-grid"><div class="about-art"><img src="assets/imagens/logo-sem-fundo.png" alt="Personagem e logo da Dona Magda"></div><div><div class="eyebrow">Um pouquinho sobre nós</div><h2>Feito com carinho, servido com amor.</h2><p>A Dona Magda Doces e Assados nasceu para levar sabor e carinho à mesa. Trabalhamos com opções variadas, valorizando o cuidado em cada preparo e a alegria de compartilhar uma boa refeição.</p><p class="promise">Dona Magda Doces e Assados — qualidade e sabor em cada detalhe. ♡</p></div></div></section>
-    <section class="contact" id="contato"><div class="wrap"><div class="contact-box"><div class="eyebrow">Estamos esperando por você</div><h2>Vamos pedir uma delícia?</h2><p>Acompanhe as novidades, veja os produtos e entre em contato pelo Instagram. Será um prazer atender você!</p><div class="social"><a href="https://www.instagram.com/donamagda.doceseassados/" target="_blank" rel="noopener">📷 Instagram @donamagda.doceseassados</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">f Facebook</a></div></div></div></section>
+    <section id="sobre" class="about"><div class="wrap about-grid"><div class="about-art"><img src="assets/imagens/logo-sem-fundo.png" alt="Personagem e logo da Dona Magda"></div><div>
+        <div class="eyebrow">Um pouquinho sobre nós</div>
+        <h2>Feito com carinho, servido com amor.</h2>
+        <p>A Dona Magda Doces e Assados nasceu para levar sabor e carinho à mesa. Trabalhamos com opções variadas, valorizando o cuidado em cada preparo e a alegria de compartilhar uma boa refeição.</p>
+        <p class="promise">Dona Magda Doces e Assados — qualidade e sabor em cada detalhe. ♡</p></div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
   </main>
   <!-- LOCALIZAÇÃO DA LOJA -->
 
@@ -260,5 +311,137 @@
     <span class="whatsapp-text">Faça seu pedido!</span>
     <img src="assets/imagens/logo-whatsapp.png" alt="WhatsApp">
 </a>
+
+  <!--CARROSEL IMAGENS PRODUTOS-->  
+<script>
+let indiceCarrossel = 0;
+
+function larguraVisivel() {
+    if (window.innerWidth <= 550) return 1;
+    if (window.innerWidth <= 850) return 2;
+    return 3;
+}
+
+function atualizarCarrossel() {
+    const trilho = document.getElementById("carrosselProdutos");
+    const indicadores = document.getElementById("indicadoresCarrossel");
+
+    if (!trilho || !indicadores) return;
+
+    const produtos = trilho.querySelectorAll(".produto-card");
+    const visiveis = larguraVisivel();
+    const maximo = Math.max(0, produtos.length - visiveis);
+
+    indiceCarrossel = Math.min(indiceCarrossel, maximo);
+
+    const largura = produtos[0].getBoundingClientRect().width;
+    const espaco = parseFloat(getComputedStyle(trilho).gap) || 0;
+
+    trilho.style.transform =
+        `translateX(-${indiceCarrossel * (largura + espaco)}px)`;
+
+    indicadores.innerHTML = "";
+
+    for (let i = 0; i <= maximo; i++) {
+        const ponto = document.createElement("button");
+        ponto.className = "carrossel-ponto" +
+            (i === indiceCarrossel ? " ativo" : "");
+
+        ponto.setAttribute("aria-label", "Ir para posição " + (i + 1));
+
+        ponto.onclick = function() {
+            indiceCarrossel = i;
+            atualizarCarrossel();
+        };
+
+        indicadores.appendChild(ponto);
+    }
+}
+
+function moverCarrossel(direcao) {
+    const trilho = document.getElementById("carrosselProdutos");
+    if (!trilho) return;
+
+    const maximo = Math.max(
+        0,
+        trilho.children.length - larguraVisivel()
+    );
+
+    indiceCarrossel += direcao;
+
+    if (indiceCarrossel > maximo) indiceCarrossel = 0;
+    if (indiceCarrossel < 0) indiceCarrossel = maximo;
+
+    atualizarCarrossel();
+}
+
+window.addEventListener("resize", atualizarCarrossel);
+window.addEventListener("load", atualizarCarrossel);
+
+
+    <!--CARROSSEL ADICIONAIS-->
+
+
+let indiceAdicionais = 0;
+
+function atualizarAdicionais() {
+    const trilho = document.getElementById("carrosselAdicionais");
+    const indicadores = document.getElementById("indicadoresAdicionais");
+
+    if (!trilho || !indicadores) return;
+
+    const produtos = trilho.querySelectorAll(".adicional-card");
+    const visiveis = larguraVisivel();
+    const maximo = Math.max(0, produtos.length - visiveis);
+
+    indiceAdicionais = Math.min(indiceAdicionais, maximo);
+
+    const largura = produtos[0].getBoundingClientRect().width;
+    const espaco = parseFloat(getComputedStyle(trilho).gap) || 0;
+
+    trilho.style.transform =
+        `translateX(-${indiceAdicionais * (largura + espaco)}px)`;
+
+    indicadores.innerHTML = "";
+
+    for (let i = 0; i <= maximo; i++) {
+        const ponto = document.createElement("button");
+
+        ponto.className = "carrossel-ponto" +
+            (i === indiceAdicionais ? " ativo" : "");
+
+        ponto.setAttribute("aria-label", "Ir para posição " + (i + 1));
+
+        ponto.onclick = function() {
+            indiceAdicionais = i;
+            atualizarAdicionais();
+        };
+
+        indicadores.appendChild(ponto);
+    }
+}
+
+function moverAdicionais(direcao) {
+    const trilho = document.getElementById("carrosselAdicionais");
+    if (!trilho) return;
+
+    const maximo = Math.max(
+        0,
+        trilho.children.length - larguraVisivel()
+    );
+
+    indiceAdicionais += direcao;
+
+    if (indiceAdicionais > maximo) indiceAdicionais = 0;
+    if (indiceAdicionais < 0) indiceAdicionais = maximo;
+
+    atualizarAdicionais();
+}
+
+window.addEventListener("resize", atualizarAdicionais);
+window.addEventListener("load", atualizarAdicionais);
+
+</script>
+
 </body>
 </html>
