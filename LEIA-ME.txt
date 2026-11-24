@@ -1,0 +1,16 @@
+DONA MAGDA DOCES E ASSADOS — SITE
+
+Como visualizar:
+1. Extraia o arquivo ZIP.
+2. Abra a pasta dona-magda-site.
+3. Dê dois cliques em index.html para abrir no navegador.
+
+Como publicar:
+- Envie todos os arquivos e a pasta assets para um serviço de hospedagem estática (por exemplo, Netlify ou GitHub Pages).
+- O arquivo inicial do site é index.html.
+
+Antes de divulgar, revise:
+- O botão de pedido está direcionando para o Instagram @donamagda.doceseassados.
+- Adicione um link de WhatsApp quando tiver o número comercial.
+- Confirme os produtos e a descrição de atendimento.
+- Não foram incluídos preços, endereço residencial ou horários porque ainda não foram informados.
