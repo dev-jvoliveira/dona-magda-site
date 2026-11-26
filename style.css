@@ -515,6 +515,21 @@
     }
 }
 
+
+
+/* video mp4 */
+
+.hero-logo video {
+    width: 70%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+
+
+
 /* CELULAR */
 
 @media (max-width: 550px) {
@@ -583,3 +598,5 @@
         flex-basis: 100%;
     }
 }
+
+
