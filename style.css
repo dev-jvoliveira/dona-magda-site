@@ -507,6 +507,14 @@
     background: #f52e79;
 }
 
+/* rolagem produtos */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 /* TABLET */
 
 @media (max-width: 850px) {
